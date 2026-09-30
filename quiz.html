@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Online Safety</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🛡️ Online Safety</div>
+    <nav>
+      <a href="index.html" data-en="Home" data-hi="होम" data-mr="मुख्यपृष्ठ">Home</a>
+      <a href="risks.html" data-en="Online Risks" data-hi="ऑनलाइन जोखिम" data-mr="ऑनलाइन धोके">Online Risks</a>
+      <a href="tips.html" data-en="Safety Tips" data-hi="सुरक्षा सुझाव" data-mr="सुरक्षा टिप्स">Safety Tips</a>
+      <a href="social.html" data-en="Social Media" data-hi="सोशल मीडिया" data-mr="सोशल मीडिया">Social Media</a>
+      <a href="quiz.html" class="active" data-en="Quiz" data-hi="क्विज़" data-mr="क्विझ">Quiz</a>
+    </nav>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+      <option value="mr">मराठी</option>
+    </select>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1 data-en="Online Safety Quiz" data-hi="ऑनलाइन सुरक्षा क्विज़" data-mr="ऑनलाइन सुरक्षा क्विझ">
+        Online Safety Quiz
+      </h1>
+      <p data-en="Answer the questions to check your online-safety knowledge."
+         data-hi="अपने ऑनलाइन सुरक्षा ज्ञान को जांचने के लिए प्रश्नों के उत्तर दें।"
+         data-mr="तुमचे ऑनलाइन सुरक्षा ज्ञान तपासण्यासाठी प्रश्नांची उत्तरे द्या.">
+        Answer the questions to check your online-safety knowledge.
+      </p>
+    </section>
+
+    <section class="light-section">
+      <form id="studentForm" class="quiz-box">
+        <label for="studentName" data-en="Full Name" data-hi="पूरा नाम" data-mr="पूर्ण नाव">Full Name</label>
+        <input type="text" id="studentName" required>
+
+        <label for="studentAgeGroup" data-en="Age Group" data-hi="आयु वर्ग" data-mr="वयोगट">Age Group</label>
+        <select id="studentAgeGroup" required>
+          <option value="">Select age group</option>
+          <option value="Children">Children: Under 13</option>
+          <option value="Teen">Teen: 13 to 17</option>
+          <option value="Adult">Adult: 18 and above</option>
+        </select>
+
+        <label for="studentGender" data-en="Gender" data-hi="लिंग" data-mr="लिंग">Gender</label>
+        <select id="studentGender" required>
+          <option value="">Select gender</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Other">Other / Prefer not to say</option>
+        </select>
+
+        <button class="button" type="submit"
+                data-en="Start Quiz" data-hi="क्विज़ शुरू करें" data-mr="क्विझ सुरू करा">
+          Start Quiz
+        </button>
+      </form>
+
+      <form id="quizForm" class="quiz-box hidden">
+        <div id="questionsArea"></div>
+        <button class="button" type="submit"
+                data-en="Submit Quiz" data-hi="क्विज़ जमा करें" data-mr="क्विझ सबमिट करा">
+          Submit Quiz
+        </button>
+      </form>
+
+      <div id="quizResult" class="quiz-result hidden">
+        <p id="scoreMessage"></p>
+        <p data-en="Your result has been saved privately for this project."
+           data-hi="आपका परिणाम इस प्रोजेक्ट के लिए निजी रूप से सेव कर दिया गया है।"
+           data-mr="तुमचा निकाल या प्रकल्पासाठी खाजगीरित्या जतन केला गेला आहे.">
+          Your result has been saved privately for this project.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Online Safety Awareness Project</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
